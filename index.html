@@ -61,14 +61,13 @@
         color: black;
         text-align: center;
       }
-
+      
       h2
       {
           color: #1ED75F;
           text-align: center;
           text-shadow: 1px 1px rgb(103, 103, 103);
       }
-      
 
       li
       {
@@ -79,6 +78,19 @@
       {
           color: black;
       }
+
+
+input[type=button] {
+    padding:10px 15px; 
+    background: #1ED75F; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
     </style>
 
     
@@ -93,17 +105,17 @@
     <h2><em>How To Use:</em></h2> 
     
     <h3>Enter a Spotify URL of the artist you want to view </h3>
-    <h3>Click the "Send URL!" button to see your results! </h3>
+    <h3>Click the "SEND URL!" button to see your results! </h3>
     <h3>You can <em>double-click on a node</em> to visit the artist's Spotify page </h3>
 
     <hr>
-    
+
     <br />
     <form>
       <label>Enter a Spotify URL:</label>
       <input type="url"  id="enter_url" placeholder="Enter Spotify URL:"/><br />
       <label>Submit Button:</label>
-      <input type="button" value="Send URL!" id="btnRun" onclick="parseString();" />
+      <input type="button" value="SEND URL!" id="btnRun" onclick="parseString();" />
     </form>
 
 
