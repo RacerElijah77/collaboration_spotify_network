@@ -20,7 +20,7 @@
       html, body #container {
         background-color: #000000;
         background-repeat: no-repeat;
-        background-image:url("images/TCyBmw.webp") ;
+        background-image:url("images/istockphoto-1322292759-170667a.jpeg") ;
         background-size: cover;
         font-family: Arial, Helvetica, sans-serif;
         width: 100%;
@@ -52,14 +52,23 @@
 
       h1
       {
-          color:rgb(58, 247, 0);
+          color: #1ED75F;
           text-align: center;
+          text-shadow: 2px 2px rgb(103, 103, 103);
       }
 
-      h2, h3, h4, h5, h6 {
-        color: white;
+      h3, h4, h5, h6 {
+        color: black;
         text-align: center;
       }
+
+      h2
+      {
+          color: #1ED75F;
+          text-align: center;
+          text-shadow: 1px 1px rgb(103, 103, 103);
+      }
+      
 
       li
       {
@@ -68,7 +77,7 @@
 
       label
       {
-          color: white;
+          color: black;
       }
 
 
@@ -136,8 +145,8 @@
         var chart = anychart.graph(data);
         // set title
         chart.title("Collaborated Artists");
-        chart.background().fill("");
-        chart.background().stroke("4 #3AF700");
+        chart.background().fill("white", 0);
+        chart.background().stroke("4 #1ED75F");
 
         chart.layout().iterationCount(120);
         // access nodes
@@ -148,7 +157,7 @@
         nodes.hovered().height(45);
         nodes.selected().height(45);
 
-        nodes.normal().fill("rgb(58, 247, 0)");
+        nodes.normal().fill("1ED75F");
         nodes.hovered().fill("white");
         nodes.selected().fill("#333333");
 
