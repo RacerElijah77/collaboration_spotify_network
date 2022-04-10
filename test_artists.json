@@ -48,6 +48,86 @@
       "fill": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Mos_Def_-_Ilosaarirock_2012.jpg/440px-Mos_Def_-_Ilosaarirock_2012.jpg"
       }
+    },
+    {
+      "id": "Nicki Minaj",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0hCNtLu0JehylgoiP8L4Gh?si=QkVWhWz-QXuKtEZ4mkU_Vg",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nicki_Minaj_Realize_NBA_Awards_2017.png/440px-Nicki_Minaj_Realize_NBA_Awards_2017.png"
+      }
+    },
+    {
+      "id": "Pusha T",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0ONHkAv9pCAFxb0zJwDNTy?si=LMLnWtwySqaFxrxJpZwkcw",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pusha_T_%2821889154165%29.jpg/440px-Pusha_T_%2821889154165%29.jpg"
+      }
+    },
+    {
+      "id": "2 Chainz",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/17lzZA2AlOHwCwFALHttmp?si=9jsf210NTkCHKxYlw07grg",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2_Chainz_at_Pretty_Girls_Like_Trap_Music_Tour.jpg/440px-2_Chainz_at_Pretty_Girls_Like_Trap_Music_Tour.jpg"
+      }
+    },
+    {
+      "id": "Rihanna",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H?si=eY-e2vJ_Reqee-K9u_kP8g",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Rihanna_Fenty_2018.png/440px-Rihanna_Fenty_2018.png"
+      }
+    },
+    {
+      "id": "Jeezy",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/4yBK75WVCQXej1p04GWqxH?si=NtzpwqTDROyO7odugwx59w",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jeezy.png/440px-Jeezy.png"
+      }
+    },
+    {
+      "id": "Ludacris",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/3ipn9JLAPI5GUEo4y4jcoi?si=86VurtllQHqTMBg3bKCesQ",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ludacris_2008_%28cropped%29.jpg/440px-Ludacris_2008_%28cropped%29.jpg"
+      }
+    },
+    {
+      "id": "Travis Scott",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY?si=VKNcejw6SGylYoMBsyc7jA",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg/440px-Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg"
+      }
+    },
+    {
+      "id": "Travis Scott",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY?si=VKNcejw6SGylYoMBsyc7jA",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg/440px-Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg"
+      }
+    },
+    {
+      "id": "DJ Khaled",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0QHgL1lAIqAw0HtD7YldmP?si=owijWC3uQyCta987D1ulog",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/DJ_Khaled_2012_%28cropped%29.jpg/440px-DJ_Khaled_2012_%28cropped%29.jpg"
+      }
+    },
+    {
+      "id": "Kid Cudi",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu?si=mz_lgxhtSZWz72yj1LvSVg",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kid_Cudi_2010_2_%28crop%29.jpg/440px-Kid_Cudi_2010_2_%28crop%29.jpg"
+      }
     }
 
   ],
@@ -56,6 +136,15 @@
     { "from": "Kanye West", "to": "Jay-Z" },
     { "from": "Kanye West", "to": "Sunday Service Choir" },
     { "from": "Kanye West", "to": "Ty Dolla Sign" },
-    { "from": "Kanye West", "to": "Mos Def" }
+    { "from": "Kanye West", "to": "Mos Def" },
+    { "from": "Kanye West", "to": "Nicki Minaj" },
+    { "from": "Kanye West", "to": "Pusha T" },
+    { "from": "Kanye West", "to": "2 Chainz" },
+    { "from": "Kanye West", "to": "Rihanna" },
+    { "from": "Kanye West", "to": "Jeezy" },
+    { "from": "Kanye West", "to": "Ludacris" },
+    { "from": "Kanye West", "to": "Travis Scott" },
+    { "from": "Kanye West", "to": "DJ Khaled" },
+    { "from": "Kanye West", "to": "Kid Cudi" }
   ]
 }
