@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "Kanye West",
+      "height": 100,
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x?si=rxt10TjvQ4azxRjKuFbRdA",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Kanye_West_at_the_2009_Tribeca_Film_Festival_%28cropped%29.jpg/220px-Kanye_West_at_the_2009_Tribeca_Film_Festival_%28cropped%29.jpg"
+      }
+    },
+    {
+      "id": "Jay-Z",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB?si=3DY2y3slT0ueea9jPvW8Pw",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg/220px-Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg"
+      }
+    },
+    {
+      "id": "Child Rebel Soldier",
+      "height": 70,
+      "url": "https://open.spotify.com/playlist/6ervjMBfDSKJDkz9eIFISD?si=1fb48b78088e48cb",
+      "fill": {
+        "src": "http://images.genius.com/71edef20a347b84f86deaec1a2d88f55.280x280x1.jpg"
+      }
+    },
+    {
+      "id": "Sunday Service Choir",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/2c9O21YLFy4tFI9zCVhbFg?si=fDmcwgEHTWC5R3FrSbK6cQ",
+      "fill": {
+        "src": "https://i.ytimg.com/vi/97tvJs5fQwM/maxresdefault.jpg"
+      }
+    },
+    {
+      "id": "Ty Dolla Sign",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/7c0XG5cIJTrrAgEC3ULPiq?si=Fv4swihbQcWhGWLe7R2OaA",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ty_Dolla_Sign_2018.jpg/220px-Ty_Dolla_Sign_2018.jpg"
+      }
+    },
+
+    {
+      "id": "Mos Def",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0Mz5XE0kb1GBnbLQm2VbcO?si=ZpPIBcK5Toy458YTlUP73Q",
+      "fill": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Mos_Def_-_Ilosaarirock_2012.jpg/440px-Mos_Def_-_Ilosaarirock_2012.jpg"
+      }
+    }
+
+  ],
+  "edges": [
+    { "from": "Kanye West", "to": "Child Rebel Soldier" },
+    { "from": "Kanye West", "to": "Jay-Z" },
+    { "from": "Kanye West", "to": "Sunday Service Choir" },
+    { "from": "Kanye West", "to": "Ty Dolla Sign" },
+    { "from": "Kanye West", "to": "Mos Def" }
+  ]
+}

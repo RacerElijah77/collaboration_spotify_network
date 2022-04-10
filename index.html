@@ -1,0 +1,204 @@
+<!-- HackTCNJ 2022 Spotify Heatmap using Maps and Spotify API -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HackTCNJ 2022 Demo Spotify Collaborated Artists</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+	    <script type="text/javascript" src="./d3.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>	
+     <style type "text/css">
+      html, body #container {
+        background-color: #000000;
+        background-repeat: no-repeat;
+        background-image:url("images/shooting-star-stars.gif") ;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+
+      p
+      {
+          color: white;
+      }
+
+      hr {
+        border-style: none;
+        border-top-style: dotted;
+        border-color: rgb(58, 247, 0);
+        border-width: 7px;
+        /* background-color: #ffffff; */
+        height: 0px;
+        width: 55%;
+      }
+      img {
+        height: 245px;
+        border-style: dashed;
+        border-width: 10px;
+      }
+
+      h1
+      {
+          color:rgb(58, 247, 0);
+          text-align: center;
+      }
+
+      h2, h3, h4, h5, h6 {
+        color: white;
+        text-align: center;
+      }
+
+      li
+      {
+          color: white;
+      }
+
+      label
+      {
+          color: white;
+      }
+
+
+      
+     
+
+    </style>
+
+    
+    </head>
+
+    <body>
+    
+    
+    <h1>Related Artists Network Graph using Spotify API</h1>
+    <hr>
+    <h2>This web application demonstrates the use of finding artists' collaborations, using information taken from Spotify's metadata </h2>
+    <h2><em>How To Use:</em></h2> 
+    
+    <h3>Enter a Spotify URL of the artist you want to view </h3>
+    <h3>Click the "Send URL!" button to see your results! </h3>
+    <h3>You can <em>double-click on a node</em> to visit the artist's Spotify page </h3>
+
+    <hr>
+    
+    <br />
+    <form>
+      <label>Enter a Spotify URL:</label>
+      <input type="url"  id="enter_url" placeholder="Enter Spotify URL:"/><br />
+      <label>Submit Button:</label>
+      <input type="button" value="Send URL!" id="btnRun" onclick="parseString();" />
+    </form>
+
+
+      <script type = "text/javascript">
+      var finalString;
+      function parseString()
+      {
+        var address = document.getElementById('enter_url').value; //input address (URL)
+        var stringarray1;
+        var stringarray2;
+        var product;
+        /* splits the URL between each slash */
+        stringarray1 = address.split("/");
+        stringarray2 = stringarray1[4].split("?");
+        finalString = stringarray2[0];
+        document.getElementById("test").innerHTML = finalString;
+      }
+     </script>
+
+     <h2>Parsed String (string will be used to go into the Spotify API)</h2>
+     <h1 id ="test"></h1>
+
+     <button id="zoomInButton" onclick="zoomIn()">Zoom In</button>
+     <button id="zoomOutButton" onclick="zoomOut()">Zoom Out</button>
+    
+
+    <div class="container" id="container" style="width: 1500px; height: 750px; "></div>
+     <script>
+        anychart.onDocumentReady(function () {
+        anychart.data.loadJsonFile("test_artists.json", function (data) {
+        // create chart from loaded data
+
+        console.log(data)
+        var chart = anychart.graph(data);
+        // set title
+        chart.title("Collaborated Artists");
+        chart.background().fill("");
+        chart.background().stroke("4 #3AF700");
+
+        chart.layout().iterationCount(125);
+        // access nodes
+        var nodes = chart.nodes();
+
+        // set the size of nodes
+        nodes.normal().height(30);
+        nodes.hovered().height(45);
+        nodes.selected().height(45);
+
+        nodes.normal().fill("rgb(58, 247, 0)");
+        nodes.hovered().fill("white");
+        nodes.selected().fill("#333333");
+
+        // set the stroke of nodes
+        nodes.normal().stroke(null);
+        nodes.hovered().stroke("rgb(58, 247, 0)", 3);
+        nodes.selected().stroke("#333333", 3);
+        // enable labels of nodes
+        chart.nodes().labels().enabled(true);
+
+        // configure labels of nodes
+        chart.nodes().labels().format("{%id}");
+        chart.nodes().labels().fontSize(12);
+        chart.nodes().labels().fontWeight(600);
+
+        chart.container("container");
+      
+
+        chart.draw();
+
+        chart.listen('dblClick', function (e) {
+           var tag = e.domTarget.tag;
+           if(tag)
+           {
+               console.log(`Clicked ${tag.type} with ID ${tag.id}`);
+
+               if(tag.type === 'node')
+               {
+                   var url;
+                   for(var i = 0; i < data.nodes.length; i++)
+                   {
+                       if(data.nodes[i].id === tag.id)
+                       {
+                           url = data.nodes[i].url;
+                           break;
+                       }
+                   }
+                   window.open(url, '_blank');
+               }
+           }
+         });
+         
+        });
+  });
+
+    </script>
+
+        <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5K4W6rqBFWDnAN6FQUkS6x?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
