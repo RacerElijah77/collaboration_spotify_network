@@ -128,6 +128,38 @@
       "fill": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kid_Cudi_2010_2_%28crop%29.jpg/440px-Kid_Cudi_2010_2_%28crop%29.jpg"
       }
+    },
+    {
+      "id": "Lil Pump",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/3wyVrVrFCkukjdVIdirGVY?si=unrpe5Q-QLCMwgsI1MdcYQ",
+      "fill": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Lil_Pump_Fillmore_Auditorium_%28cropped%29.jpg/440px-Lil_Pump_Fillmore_Auditorium_%28cropped%29.jpg"
+      }
+    },
+    {
+      "id": "Rick Ross",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/1sBkRIssrMs1AbVkOJbc7a?si=YyJAiHl4QIeVAKybw6R7Jw",
+      "fill": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Rick_Ross_The_Mastermind_Tour_June_15%2C_2014_Toronto_%2814590434716%29_%28cropped%29.jpg/440px-Rick_Ross_The_Mastermind_Tour_June_15%2C_2014_Toronto_%2814590434716%29_%28cropped%29.jpg"
+      }
+    },
+    {
+      "id": "Big Sean",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/0c173mlxpT3dSFRgMO8XPh?si=t48QTIXCTJWMgUz4n3Rd-g",
+      "fill": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Anderson_at_the_2021_Grammys_%28cropped%29.jpg/440px-Anderson_at_the_2021_Grammys_%28cropped%29.jpg"
+      }
+    },
+    {
+      "id": "Swizz Beatz",
+      "height": 70,
+      "url": "https://open.spotify.com/artist/2cADQgiLMjNhbsfeN52Bf3?si=apGbgNyOT8qoakyLMb4YgQ",
+      "fill": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/SwizzBeatz_ReebokClassic.JPG"
+      }
     }
 
   ],
@@ -145,6 +177,10 @@
     { "from": "Kanye West", "to": "Ludacris" },
     { "from": "Kanye West", "to": "Travis Scott" },
     { "from": "Kanye West", "to": "DJ Khaled" },
-    { "from": "Kanye West", "to": "Kid Cudi" }
+    { "from": "Kanye West", "to": "Kid Cudi" },
+    { "from": "Kanye West", "to": "Lil Pump" },
+    { "from": "Kanye West", "to": "Rick Ross" },
+    { "from": "Kanye West", "to": "Big Sean" },
+    { "from": "Kanye West", "to": "Swizz Beatz" }
   ]
 }
